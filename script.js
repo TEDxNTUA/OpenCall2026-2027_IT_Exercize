@@ -1,5 +1,5 @@
 /* ---------- Αντίστροφη μέτρηση ---------- */
-
+const testDate = new Date("2027-05-09")
 
 /* ---------- Φίλτρο ομιλητών ---------- */
 const filterButtons = document.querySelectorAll('.filter-btn');
