@@ -9,7 +9,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--black);
-  background: var(--white);
+  background: var(--black);
   line-height: 1.6;
 }
 
@@ -88,9 +88,92 @@ body {
   font-weight: bold;
 }
 
+#hidden1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#hidden2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 /* Sections for speakers */
 
+.section {
+  background-color: var(--black);
+  color: var(--white);
+}
 
+.filters div {
+  display: flex;
+  flex-direction: column;
+  min-width: 80px;
+}
+
+.filter-btn {
+  background-color: var(--black);
+  color: var(--white);
+  display:inline;
+  padding: 10px 20px;
+  border: 0px;
+  transition: background-color 0.25s;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--red);
+
+}
+
+.speakers-grid {
+
+  display: flex;
+  align-items: center;
+}
+
+.speaker-box {
+  display: inline-block;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 16px 22px;
+  margin: 12px;
+  border: 0px;
+  border-radius: 18px;
+  max-width: 320px;
+  width: fit-content;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  transition: background-color 0.25s;
+}
+
+.speaker-box:hover {
+  background-color: #860000;
+}
+
+.speaker-btn {
+  background-color: #860000;
+  color: var(--white);
+  display:inline;
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 10px;
+  transition: background-color 0.25s;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.25s;  
+}
+
+.speaker-btn:hover {
+  background-color: var(--red);
+}
 
 /* Form */
 form {
@@ -102,6 +185,14 @@ form {
 label {
   margin-top: 16px;
   font-weight: bold;
+}
+
+.mandatoryText {
+  color: #c00000;
+}
+
+#mandatory-text {
+  color: #c00000;
 }
 
 input,
