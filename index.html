@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>TEDxNTUA 2027</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+
 </head>
 <body>
 
@@ -33,6 +33,8 @@
         <div><span id="minutes">0</span><small>Λεπτά</small></div>
         <div><span id="seconds">0</span><small>Δευτερόλεπτα</small></div>
       </div>
+      <br><div><span id="hidden1"></span></div>
+      <div><span id="hidden2"></span></div>
     </section>
 
     <section id="speakers" class="section">
@@ -45,25 +47,33 @@
       </div>
 
       <div class="speakers-grid">
-        <article class="speaker-card" data-category="tech">
+        <article class="speaker-card" data-category="tech"><span class="speaker-box">
           <h4>Μαρία Παπαδοπούλου</h4>
           <p class="role">Μηχανικός Λογισμικού</p>
           <p>Πώς η τεχνητή νοημοσύνη αλλάζει την καθημερινότητά μας.</p>
+          <button id="btn1" class="speaker-btn" type="button">More</button>
+          <p id="speaker1"></p></span>
         </article>
-        <article class="speaker-card" data-category="science">
+        <article class="speaker-card" data-category="science"><span class="speaker-box">
           <h4>Νίκος Αλεξίου</h4>
           <p class="role">Αστροφυσικός</p>
           <p>Ταξίδι στα όρια του ορατού σύμπαντος.</p>
+          <button id="btn2" class="speaker-btn" type="button" href="">More</button>
+          <p id="speaker2"></p></span>
         </article>
-        <article class="speaker-card" data-category="art">
+        <article class="speaker-card" data-category="art"><span class="speaker-box">
           <h4>Ελένη Γεωργίου</h4>
           <p class="role">Εικαστικός</p>
           <p>Η τέχνη ως γλώσσα που δεν χρειάζεται μετάφραση.</p>
+          <button id="btn3" class="speaker-btn" type="button" href="">More</button>
+          <p id="speaker3"></p></span>
         </article>
-        <article class="speaker-card" data-category="tech">
+        <article class="speaker-card" data-category="tech"><span class="speaker-box">
           <h4>Δημήτρης Κωνσταντίνου</h4>
           <p class="role">Ερευνητής Κυβερνοασφάλειας</p>
           <p>Ασφάλεια στον ψηφιακό κόσμο: τι μπορούμε να κάνουμε όλοι.</p>
+          <button id="btn4" class="speaker-btn" type="button" href="">More</button>
+          <p id="speaker4"></p></span>
         </article>
       </div>
     </section>
@@ -71,17 +81,19 @@
     <section id="contact" class="section">
       <h2>Επικοινωνία</h2>
       <form id="contact-form">
-        <label for="name">Όνομα</label>
+        <label for="name">Όνομα<span class="mandatoryText"> *</span></label>
         <input type="text" id="name" name="name" placeholder="Το όνομά σας">
 
-        <label for="email">Email</label>
-        <input type="text" id="e-mail" name="email" placeholder="onoma@example.gr">
+        <label for="email">Email<span class="mandatoryText"> *</span></label>
+        <input type="text" id="email" name="email" placeholder="onoma@example.gr">
+        <!--Αλλαγή του id="e-mail" σε id="email". Ανάλογη αλλαγή του id στο αντίστοιχο κομμάτι του JS κώδικα-->
 
-        <label for="message">Μήνυμα</label>
+        <label for="message">Μήνυμα<span class="mandatoryText"> *</span></label>
         <textarea id="message" name="message" rows="4" placeholder="Γράψτε το μήνυμά σας"></textarea>
 
         <button type="submit" class="submit-btn">Αποστολή</button>
         <p id="form-message"></p>
+        <p id="mandatory-text">* : Τα πεδία αυτά πρέπει να συμπληρωθούν υποχρεωτικά</p>
       </form>
     </section>
   </main>
@@ -90,5 +102,6 @@
     <p>© 2027 TEDxNTUA. Το παρόν είναι δοκιμαστική σελίδα για το open call.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
