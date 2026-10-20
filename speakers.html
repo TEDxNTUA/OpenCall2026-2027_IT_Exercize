@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEDxNTUA 2027</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="speakers.js" defer></script>
+    <script src="buttons.js" defer></script>
+  </head>
+  <body>
+
+    <div class="button">
+      <button class="theme-toggle" type="button" aria-label="Ενεργοποίηση σκοτεινής λειτουργίας" aria-pressed="false" title="Εναλλαγή θέματος">☾</button>
+    </div>
+    
+     <header class="speakers-header">
+      <h2>Ομιλητές</h2>
+      <nav>
+        <ul class="nav-links-3" id="nav-links-3">
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+     </header>
+
+    <main>
+      
+      <section id="speakers" class="section">
+        <div class="filters" aria-label="Φίλτρα ομιλητών">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">Όλοι</button>
+          <button type="button" class="filter-btn" data-filter="tech" aria-pressed="false">Τεχνολογία</button>
+          <button type="button" class="filter-btn" data-filter="science" aria-pressed="false">Επιστήμη</button>
+          <button type="button" class="filter-btn" data-filter="art" aria-pressed="false">Τέχνη</button>
+        </div>
+
+        <div class="speakers-grid">
+          <article class="speaker-card" data-category="tech">
+            <h3>Μαρία Παπαδοπούλου</h3>
+            <p class="role">Μηχανικός Λογισμικού</p>
+            <p>Πώς η τεχνητή νοημοσύνη αλλάζει την καθημερινότητά μας.</p>
+            <button type="button" class="speaker-details-btn">Περισσότερα</button>
+          </article>
+          <article class="speaker-card" data-category="science">
+            <h3>Νίκος Αλεξίου</h3>
+            <p class="role">Αστροφυσικός</p>
+            <p>Ταξίδι στα όρια του ορατού σύμπαντος.</p>
+            <button type="button" class="speaker-details-btn">Περισσότερα</button>
+          </article>
+          <article class="speaker-card" data-category="art">
+            <h3>Ελένη Γεωργίου</h3>
+            <p class="role">Εικαστικός</p>
+            <p>Η τέχνη ως γλώσσα που δεν χρειάζεται μετάφραση.</p>
+            <button type="button" class="speaker-details-btn">Περισσότερα</button>
+          </article>
+          <article class="speaker-card" data-category="tech">
+            <h3>Δημήτρης Κωνσταντίνου</h3>
+            <p class="role">Ερευνητής Κυβερνοασφάλειας</p>
+            <p>Ασφάλεια στον ψηφιακό κόσμο: τι μπορούμε να κάνουμε όλοι.</p>
+            <button type="button" class="speaker-details-btn">Περισσότερα</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="speaker-modal" aria-labelledby="speaker-modal-title">
+      <button type="button" class="modal-close" aria-label="Κλείσιμο παραθύρου">&times;</button>
+      <h2 id="speaker-modal-title"></h2>
+      <p class="modal-role"></p>
+      <p class="modal-talk"></p>
+    </dialog>
+  </body>
+</html>

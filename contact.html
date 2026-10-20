@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="el">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEDxNTUA 2027</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="buttons.js" defer></script>
+  </head>
+  <body>
+    <button class="theme-toggle" type="button" aria-label="Ενεργοποίηση σκοτεινής λειτουργίας" aria-pressed="false" title="Εναλλαγή θέματος">☾</button>
+
+    <header class="contact-header">
+      <h2>Επικοινωνία</h2>
+      <nav aria-label="Κύρια πλοήγηση">
+        <ul class="nav-links-2" id="nav-links-2">
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="speakers.html">Ομιλητές</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contact-page">
+      <section id="contact" class="contact-section" aria-labelledby="contact-title">
+        <div class="contact-intro">
+          <p class="contact-eyebrow">TEDxNTUA 2027</p>
+          <h1 id="contact-title">Επικοινωνήστε μαζί μας</h1>
+          <p>Στείλτε μας μια ερώτηση ή μια ιδέα σας. Θα χαρούμε να σας ακούσουμε και να σας απαντήσουμε.</p>
+        </div>
+
+        <form id="contact-form">
+          <div class="form-field">
+            <label for="name">Ονοματεπώνυμο</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Το όνομά σας" required minlength="2">
+          </div>
+
+          <div class="form-field">
+            <label for="e-mail">Email</label>
+            <input type="email" id="e-mail" name="email" autocomplete="email" placeholder="name@example.com" required>
+          </div>
+
+          <div class="form-field">
+            <label for="text">Μήνυμα</label>
+            <textarea id="text" name="message" rows="5" placeholder="Πώς μπορούμε να βοηθήσουμε;" required minlength="10" maxlength="1500"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Αποστολή μηνύματος</button>
+          <p id="form-message" class="form-status" role="status" aria-live="polite" hidden></p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
